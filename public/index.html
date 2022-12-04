@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <title>Color Picker</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <app id="app">
+      <div id="app-header">
+        <img src="https://i.imgur.com/pEds07b.png" id="logo" alt="logo" />
+        <h2>Color Picker</h2>
+      </div>
+    </app>
+    <label for="toggleTraining"><input type="checkbox" id="toggleTraining" checked>Enable neural network training</label>
+  </header>
+  <main>
+    <div>
+      <div id="blackBox">
+        <span id="blackText">
+          <h3>Dark Text</h3>
+          <p>
+            She borrowed the book from him many years ago and hasn't yet returned it.
+            He invested some skill points in Charisma and Strength.
+            The manager of the fruit stand always sat and only sold vegetables.
+            He wondered if it could be called a beach if there was no sand.
+            The ice-cream trucks bring back bad memories for all of us.
+          </p>
+        </span>
+      </div>
+      <div id="whiteBox">
+        <span id="whiteText">
+          <h3>Light text</h3>
+          <p>
+            She borrowed the book from him many years ago and hasn't yet returned it.
+            He invested some skill points in Charisma and Strength.
+            The manager of the fruit stand always sat and only sold vegetables.
+            He wondered if it could be called a beach if there was no sand.
+            The ice-cream trucks bring back bad memories for all of us.
+          </p>
+        </span>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/brain/0.6.3/brain.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
