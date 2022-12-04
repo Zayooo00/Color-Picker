@@ -13,7 +13,7 @@ console.log(Math.floor(r * 255), Math.floor(g * 255), Math.floor(b * 255));
 trainingData.push({ input: { r: 0, g: 0, b: 0 }, output: { white: 1 } });
 trainingData.push({ input: { r: 1, g: 1, b: 1 }, output: { black: 0 } });
 
-requestTrainingData.open('GET', 'https://');
+requestTrainingData.open('GET', 'https://raw.githubusercontent.com/Zayooo00/Color-Picker/master/src/training-data/trainingDataSet.json');
 requestTrainingData.onload = function () {
   var materialTrainingData = JSON.parse(requestTrainingData.responseText);
   for (let i = 0; i < materialTrainingData.length; i++) {
